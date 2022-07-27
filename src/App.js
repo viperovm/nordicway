@@ -1,24 +1,66 @@
-import logo from './logo.svg';
+import logo1 from './logo1.png';
+import phone from './phone.svg';
+import whatsapp from './whatsapp.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section>
+        <div className="wrapper">
+          <div className="image" style={{backgroundImage: `url(${logo1})`}}/>
+          <div className="text">
+            <div className={'title'}>
+              Сайт на реконструкции
+            </div>
+            <div className={'subtitle'}>
+              Наши контакты:
+            </div>
+            <div className={'contact'}>
+              <img src={phone} alt=""/>
+              <div>
+                <a href="tel:+74991300275">+7 (499) 1300 275</a>
+                <a href="tel:+79295073560">+7 (929) 507 35 60</a>
+              </div>
+            </div>
+            <div className={'contact'}>
+              <img src={whatsapp} alt=""/>
+              <div>
+                <a href="https://tap.link/@newwavecasual">@newwavecasual</a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="mobile-text">
+            <div className="text-wrapper">
+              <div className={'title'}>
+                Сайт на реконструкции
+              </div>
+              <div className={'subtitle'}>
+                Наши контакты:
+              </div>
+              <div className={'contact'}>
+                <img src={phone} alt=""/>
+                <div>
+                  <a href="tel:+74991300275">+7 (499) 1300 275</a>
+                  <a href="tel:+79295073560">+7 (929) 507 35 60</a>
+                </div>
+              </div>
+              <div className={'contact'}>
+                <img src={whatsapp} alt=""/>
+                <div>
+                  <a href="https://tap.link/@newwavecasual">@newwavecasual</a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
